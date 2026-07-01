@@ -1,0 +1,51 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transition: 1s;
+}
+
+.box:active {
+    width: 300px;
+    background-color: royalblue;
+}
+
+input {
+
+}
+
+input:focus {
+    background-color: orange;
+}
+
+.fruits span:first-child {
+    color: red;
+}
+
+/** h3는 없어도 색이 들어가지만 탐색 조건을 더 강화하고 싶을 때 사용 */
+.fruits h3:last-child {
+    color: violet;
+}
+
+/** n은 Zero-Based Numbering(0부터 시작) */
+.fruits *:nth-child(2n) {
+    color: cornflowerblue;
+}
+
+/** first-child, last-child 등 직접적인 지정 방식이 우선 순위를 갖는 것으로 보임 */
+.fruits *:nth-child(2n+1) {
+    color: coral;
+}
+
+/* .fruits *:nth-child(n+2) {
+    color: red;
+} */
+
+/** 총 결과값이 음수가 되면 적용 X */
+/* .fruits *:nth-child(-n+3) {
+    color: red;
+} */
+
+.fruits *:not(span) {
+    color: aqua;
+}
