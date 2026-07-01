@@ -10,10 +10,6 @@
     background-color: royalblue;
 }
 
-input {
-
-}
-
 input:focus {
     background-color: orange;
 }
