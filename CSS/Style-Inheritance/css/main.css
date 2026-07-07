@@ -1,0 +1,18 @@
+/** 
+스타일 상속은 기본적으로 글자와 관련된 속성이 자동 상속되지만, inherit를 이용하여 강제 상속을 부여 할 수 있다.
+*/
+
+.parent {
+  width: 300px;
+  height: 400px;
+  background-color: orange;
+}
+
+.child {
+  width: 100px;
+  height: inherit;
+  background-color: inherit;
+  position: fixed;
+  top: 100px;
+  right: 10px;
+}
