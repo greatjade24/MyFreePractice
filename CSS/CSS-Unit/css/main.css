@@ -1,0 +1,29 @@
+/* 
+px: 고정된 CSS 픽셀 단위
+%: 일반적으로 부모 요소 크기를 기준으로 계산
+em: 현재 요소의 font-size를 기준으로 계산
+rem: 최상위 html 요소의 font-size를 기준으로 계산
+vw: 브라우저 화면(뷰포트) 너비의 1%
+vh: 브라우저 화면(뷰포트) 높이의 1%
+*/
+
+html {
+  /* font-size: 16px; 기본 폰트 사이즈 */
+}
+
+.parent {
+  width: 300px;
+  height: 200px;
+  background-color: royalblue;
+  font-size: 10px;
+}
+
+.child {
+  /* width: 50%; */
+  /* width: 20em; */
+  /* width: 20rem; */
+  width: 50vw;
+  /* height: 50%; */
+  height: 100vh;
+  background-color: orange;
+}
