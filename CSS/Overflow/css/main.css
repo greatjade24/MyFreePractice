@@ -1,0 +1,23 @@
+/* overflow - 요소의 크기 이상으로 내용이 넘쳤을 때, 보여짐을 제어하는 단축 속성
+visible: 넘친 내용을 그대로 보여줌(기본값)
+hidden: 넘친 내용을 잘라냄
+scroll: 넘친 내용을 잘라냄, 스크롤바 생성
+auto: 넘친 애용이 있는 경우만 잘라내고 스크롤바 생성 */
+
+/* overflow-x
+overflow-y */
+
+.parent {
+  width: 200px;
+  height: 150px;
+  background-color: royalblue;
+  margin: 20px;
+  padding: 20px;
+  overflow: auto;
+}
+
+.child {
+  width: 300px;
+  height: 100px;
+  background-color: orange;
+}
